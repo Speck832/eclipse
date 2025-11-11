@@ -1,0 +1,67 @@
+#header {
+  background-color: #472e24;
+  color: #ff7c3f;
+  padding: 10px;
+  text-align: center;
+  border-color: #ff7c3f;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+body {
+  background-color: #191311;
+}
+
+.eclipse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  margin: 10px;
+  border-style: solid;
+  border-color: #472e24;
+  border-width: 3px;
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+}
+
+#soleil {
+  background-color: #ff7c3f;
+  color: #191311;
+  transition: 2s;
+}
+#soleil:hover {
+  border-style: none;
+  transform: scale(1.1);
+  box-shadow: 1px -1px 53px 49px rgb(255, 124, 63);
+  -webkit-box-shadow: 1px -1px 53px 49px rgb(255, 124, 63);
+  -moz-box-shadow: 1px -1px 53px 49px rgb(255, 124, 63);
+}
+#soleil:hover #lune {
+  transform: translateX(-276px);
+}
+
+#lune {
+  background-color: #191311;
+  color: #ff7c3f;
+  transition: 2s;
+}
+#lune:hover {
+  transform: translateX(-276px);
+}
+
+#lune:hover #soleil {
+  border-style: none;
+  transform: scale3d(1000px);
+  box-shadow: 1px -1px 53px 49px rgb(255, 124, 63);
+  -webkit-box-shadow: 1px -1px 53px 49px rgb(255, 124, 63);
+  -moz-box-shadow: 1px -1px 53px 49px rgb(255, 124, 63);
+}
+
+#tout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}/*# sourceMappingURL=eclipse.css.map */
